@@ -77,8 +77,7 @@ export default class Drawer extends Component {
     this.state = {
       showMask: false
     };
-  }
-  componentWillMount() {
+
     const {
       drawerWidth,
       drawerPosition,
@@ -148,6 +147,7 @@ export default class Drawer extends Component {
     this.openDrawer = this.openDrawer.bind(this);
     this.closeDrawer = this.closeDrawer.bind(this);
   }
+
   componentDidMount () {
     this._updateNativeStyles(0);
   }
